@@ -1,11 +1,13 @@
 import logging
 import requests
+import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # === CẤU HÌNH ===
-CMC_API_KEY = ''  # <-- Thay bằng API Key từ CoinMarketCap
-TELEGRAM_BOT_TOKEN = ''  # <-- Thay bằng token bot Telegram
+CMC_API_KEY = os.getenv("CMC_API_KEY")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+
 
 CMC_API_URL = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
 CMC_MAP_URL = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/map'
