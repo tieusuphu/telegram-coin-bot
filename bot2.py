@@ -4,8 +4,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # === CẤU HÌNH ===
-CMC_API_KEY = '749f58c4-f2f3-4059-88ff-18fb487ccf26'  # <-- Thay bằng API Key từ CoinMarketCap
-TELEGRAM_BOT_TOKEN = '7615567877:AAHYTtTSEnN1o19NihjG2QsXhFnsEC5Kl3g'  # <-- Thay bằng token bot Telegram
+CMC_API_KEY = ''  # <-- Thay bằng API Key từ CoinMarketCap
+TELEGRAM_BOT_TOKEN = ''  # <-- Thay bằng token bot Telegram
 
 CMC_API_URL = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
 CMC_MAP_URL = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/map'
