@@ -77,7 +77,7 @@ async def price_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if link:
         button = InlineKeyboardMarkup([
-            [InlineKeyboardButton("🔗 Tìm hiểu thêm", url=link)]
+            [InlineKeyboardButton("🔎 Tìm hiểu thêm", url=link)]
         ])
         await update.message.reply_text(result, reply_markup=button)
     else:
